@@ -67,10 +67,7 @@
 
               <!-- Other pages -->
               <li class="nav-item ">
-                <a class="nav-link" href="/internships/">Internships</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/hobbies/">Hobbies</a>
+                <a class="nav-link" href="/experience/">Experience</a>
               </li>
             </ul>
           </div>
@@ -104,12 +101,15 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/profile.jpg" class="img-fluid z-depth-1 rounded-circle" width="auto" height="auto" alt="profile.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/profile.jpg" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="profile.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 
+            <div class="address">
+              <p>4235D-1, WID</p> <p>330 N Orchard Street</p> <p>Madison, WI 53715</p>
+            </div>
           </div>
 
           <div class="clearfix">
@@ -231,29 +231,9 @@ His reserach interests include developing methods to solve large-scale optimizat
     
     </ul>
 
-<!--- This is an HTML comment in Markdown
-* Ph.D. in Industrial and Systems Engineering, UW-Madison, 2023 (Expected)
-  - Advisors: [Prof. Jeff Linderoth](https://jlinderoth.github.io/), [Prof. Jim Luedtke](https://jrluedtke.github.io/)
-* MS in Computer Science, UW-Madison, 2022
-* MS in Industrial and Systems Engineering, UW-Madison, 2020
-* BTech in Mechanical Engineering, IIT-ISM Dhanbad, 2017
-
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
-Previous subtitle
-<a href='soni6@wisc.edu'>soni6 [at] wisc [dot] edu</a>. 
--->
-
-          </div>
-
-          
-          <!-- Selected papers -->
-          <div class="publications">
-            <h2>Publications</h2>
-            <ol class="bibliography">
+<div class="publications">
+<h2>Publications</h2>
+<ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
@@ -271,14 +251,19 @@ Previous subtitle
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em>Optimization and Engineering</em> Sep 2021
+            <em>Optimization and Engineering, </em> Sep  2021
           </div>
         
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://link.springer.com/article/10.1007/s11081-020-09527-6" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">HTML</a>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The scheduling of drilling and hydraulic fracturing of wells in an unconventional oil field plays an important role in the profitability of the field. A key challenge arising in this problem is the requirement that neither drilling nor oil production can be done at wells within a specified neighborhood of a well being fractured. We propose a novel mixed-integer linear programming (MILP) formulation for determining a schedule for drilling and fracturing wells in an unconventional oil field. We also derive an alternative formulation which provides stronger relaxations. In order to apply the MILP model for scheduling large fields, we derive a rolling horizon approach that solves a sequence of coarse time-scale MILP instances to obtain a solution at the daily time scale.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -299,20 +284,80 @@ Previous subtitle
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em>OPT2021: 13th Annual Workshop on Optimization for Machine Learning, NeurIPS</em> Sep 2021
+            <em>OPT2021: 13th Annual Workshop on Optimization for Machine Learning, NeurIPS, </em> Sep  2021
           </div>
         
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://opt-ml.org/papers/2021/paper9.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">HTML</a>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>In the Subspace Clustering with Missing Data problem, we are given a collection of n
+	data points, and each of the data points is observed
+	only on a subset of its coordinates. The data points are assumed to be concentrated near a union
+	of low-dimensional subspaces. The goal is to cluster the vectors as per their subspace membership.
+	State-of-the-art algorithms can perform poorly on instances with a large amount of missing data o
+	if the data matrix is nearly full-rank.
+	We propose a novel integer programming-based method for SCMD. The approach is based on dynamically
+	determining a set of candidate subspaces and optimally assigning points to selected subspaces. The
+	problem structure is identical to the classical facility-location problem, with subspaces playing
+	the role of facilities and data points that of customers. We propose a column-generation approach
+	for identifying candidate subspaces combined with a Benders decomposition approach for solving
+	the linear programming relaxation of the formulation. An empirical study demonstrates that the
+	proposed approach can achieve better clustering accuracy than state-of-the-art methods when the
+	data is high-rank or the percentage of missing data is high.</p>
+          </div>
         </div>
       </div>
 </li>
 </ol>
+</div>
+
+<h2 id="coursework">Coursework</h2>
+<ul>
+  <li>
+<strong>Industrial and Systems Engineering</strong>
+    <ul>
+      <li>Intro to Optimization Modeling, Linear Optimization, Integer Optimization, Nonlinear Programming, Engineering models for supply chain, Health systmes engineering, Stochastic modeling, Machine learning in action, Simulation modeling</li>
+    </ul>
+  </li>
+  <li>
+<strong>Computer Science</strong>
+    <ul>
+      <li>Intro to algorithms, Dynamic Programming, Matrix methods in machine learning, Stochastic Programming</li>
+    </ul>
+  </li>
+  <li>
+<strong>Maths</strong>
+    <ul>
+      <li>Real analysis, Mathematical foundations of machine learning</li>
+    </ul>
+  </li>
+</ul>
+
+<!--- This is an HTML comment in Markdown
+* Ph.D. in Industrial and Systems Engineering, UW-Madison, 2023 (Expected)
+  - Advisors: [Prof. Jeff Linderoth](https://jlinderoth.github.io/), [Prof. Jim Luedtke](https://jrluedtke.github.io/)
+* MS in Computer Science, UW-Madison, 2022
+* MS in Industrial and Systems Engineering, UW-Madison, 2020
+* BTech in Mechanical Engineering, IIT-ISM Dhanbad, 2017
+
+Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+
+Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Previous subtitle
+<a href='soni6@wisc.edu'>soni6 [at] wisc [dot] edu</a>. 
+-->
+
           </div>
 
+          
+          
           <!-- Social -->
           <div class="social">
             <div class="contact-icons">
